@@ -1,34 +1,19 @@
-import { useState } from 'react'
-
-function searchBar({ onSearch }) {
-  const [query, setQuery] = useState('')
-
-  function handleSubmit(event) {
-    event.preventDefault()
-    onSearch(query)
-  }
-
+function SearchBar({ onSearch }) {
   return (
-    <form
-      className="search-bar"
-      onSubmit={handleSubmit}
-    >
+    <div className="search-bar">
       <span className="search-icon">⌕</span>
 
       <input
         type="text"
-        value={query}
-        onChange={(event) =>
-          setQuery(event.target.value)
-        }
-        placeholder="search movies..."
-        aria-label="search movies"
+        placeholder="Search movies..."
+        onChange={(event) => onSearch(event.target.value)}
+        aria-label="Search movies"
       />
 
-      <button type="submit">
+      <button type="button">
         Search
       </button>
-    </form>
+    </div>
   )
 }
 
