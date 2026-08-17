@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function SearchBar({ onSearch }) {
+function searchBar({ onSearch }) {
   const [query, setQuery] = useState('')
 
   function handleSubmit(event) {
@@ -21,8 +21,8 @@ function SearchBar({ onSearch }) {
         onChange={(event) =>
           setQuery(event.target.value)
         }
-        placeholder="Search movies..."
-        aria-label="Search movies"
+        placeholder="search movies..."
+        aria-label="search movies"
       />
 
       <button type="submit">

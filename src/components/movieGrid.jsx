@@ -1,4 +1,4 @@
-import MovieCard from './MovieCard'
+import MovieCard from './movieCard'
 
 function MovieGrid({
   movies,
