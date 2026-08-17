@@ -211,9 +211,7 @@ function Home() {
       </section>
 
       <section className="controls">
-        <SearchBar
-          onSearch={setSearch}
-        />
+        <SearchBar onSearch={setSearch} />
 
         <div className="filters">
           {genres.map((item) => (
@@ -286,9 +284,7 @@ function Home() {
 
               <button
                 className="watchlist-button"
-                onClick={() =>
-                  toggleWatchlist(selectedMovie)
-                }
+                onClick={() => toggleWatchlist(selectedMovie)}
               >
                 {watchlist.some(
                   (movie) => movie.id === selectedMovie.id
