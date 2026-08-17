@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
-import SearchBar from '../components/SearchBar'
-import MovieGrid from '../components/MovieGrid'
+import SearchBar from '../components/searchBar'
+import MovieGrid from '../components/movieGrid'
 import '../App.css'
 
 const moviesData = [
